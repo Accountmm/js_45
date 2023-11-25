@@ -15,7 +15,9 @@ window.addEventListener(`scroll`, () => {
         cloud.style.transform = `translate(${y * speed / 3}px)`
     })
     birds.style.transform = `translate(${x / 2}px, ${-y / 2}px)`;
-    sun.style.transform = `translate(${x / 2}px, ${-y/ 2}px)`
+    birds.style.transition = `ease 5s`
+    sun.style.transition = `ease 5s`
+    sun.style.transform = `translate(${x * 2 }px, ${-y * 2}px)`
 
 })
 // cloud.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
